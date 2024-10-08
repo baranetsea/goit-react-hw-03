@@ -1,17 +1,12 @@
 import { Field, Form, Formik } from "formik";
 import { nanoid } from "nanoid";
 
+import css from "./ContactForm.module.css";
+
 // const inValues = {
 //   name: "",
 //   number: "",
 //   id: nanoid(),
-// };
-
-// const addProfile = ({ onAddProfile }) => {};
-// const handleSubmit = (values) => {
-//   addUser({ values });
-//   // form.reset();
-//   console.log(values);
 // };
 
 const ContactForm = ({ addUser }) => {
@@ -24,7 +19,7 @@ const ContactForm = ({ addUser }) => {
     });
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={css.form} onSubmit={handleSubmit}>
       <input type="text" name="name" />
       <input type="text" name="number" />
       <button type="submit">Add user</button>

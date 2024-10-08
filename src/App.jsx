@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/searchbox/contactform/ContactForm";
 import ContactList from "./components/contactList/ContactList";
 import SearchBox from "./components/searchbox/SearchBox";
 
