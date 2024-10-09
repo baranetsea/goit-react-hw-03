@@ -15,7 +15,7 @@ const ProfileData = [
 
 function App() {
   const [users, setUsers] = useState(() => {
-    const sUsers = localStorage.getItem("name");
+    const sUsers = localStorage.getItem("users");
     const pUsers = JSON.parse(sUsers) ?? ProfileData;
 
     return pUsers;
